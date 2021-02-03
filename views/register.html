@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre | Encontrá lo que buscás</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css ">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <main class="registerForm">
+        <h3>Creá tu cuenta aquí:</h3>
+        <form method="POST" action="/register" class="registro">
+            <input type="text" placeholder="Nombre y Apellido" required>
+            <input type="text" placeholder="Nombre de Usuario" required>
+            <input type="email" placeholder="Email" required>
+            <div class="formGroup">
+                <label for="fechaNacimiento" class="labelTitle">Fecha de Nacimiento</label>
+                <input type="date" id="fechaNacimiento" required>
+            </div>
+            <input type="text" placeholder="Domicilio" required>
+            <p for="perfilUsuario" class="labelTitle">Perfil de Usuario</p>
+            <div id="perfilUsuario">
+                <label for="comprador">
+                <input type="radio" id="comprador" value="Comprador" name="radioOption">
+                Comprador</label>
+                <label for="vendedor">
+                <input type="radio" id="vendedor" value="Vendedor" name="radioOption">
+                Vendedor</label>
+            </div>
+            <p for="intereses" class="labelTitle">Intereses</p>
+            <div id="intereses">
+                <label for=""><input type="checkbox" id="electro" value="Electro">
+                Electro</label>
+                <label for=""><input type="checkbox" id="moda" value="">
+                Moda</label>
+                <label for="hogar"><input type="checkbox" id="hogar" value="Hogar">
+                Hogar</label>
+                <label for="jugueteria"><input type="checkbox" id="jugueteria" value="Juguetería">
+                Juguetería</label>
+                <label for="vidaSana"><input type="checkbox" id="vidaSana" value="Vida Sana">
+                Vida sana</label>
+            </div>
+            <div class="formGroup">
+                <label for="avatar" class="labelTitle">Selecciona una imagen para tu perfil:</label>
+                <input type="file" name="avatar" accept=".jpg" id="avatar">
+            </div>
+            <input type="password" placeholder="Constraseña" required>
+            <input type="password" placeholder="Repite tu contraseña" required>
+            <div class="buttons">
+                <input type="submit" value="Enviar" class="btn">
+                <input type="reset" value="Resetear Datos" class="btn">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
